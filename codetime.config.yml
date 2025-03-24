@@ -1,4 +1,4 @@
-all: false
+all: true
 mode: fun
 repo: codetime-waster
 user: camadkins
