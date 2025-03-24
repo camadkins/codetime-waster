@@ -42,11 +42,13 @@ python cli/codetime_waster.py --user yourgithub --repo yourrepo --mode fun
 ### 🛠 Option 2: Local Config + GitHub Actions
 
 1. Generate a config file:
+
    ```bash
    python cli/codetime_waster.py --init --user yourgithub --repo yourrepo --mode guilty
    ```
 
 2. Commit it:
+
    ```bash
    git add codetime.config.yml
    git commit -m "Add my config"
@@ -62,12 +64,14 @@ python cli/codetime_waster.py --user yourgithub --repo yourrepo --mode fun
 1. Click **"Use this template"** (top of the repo)
 2. In your new repo:
    - Add or edit `codetime.config.yml` in the GitHub UI:
+
      ```yaml
      user: yourgithub
      repo: yourrepo
      mode: fun
      all: false
      ```
+
 3. Commit the change to `main`
 4. Go to **Actions** → Run the job
 5. `STATS.md` will be generated and pushed automatically every Sunday 🎉
@@ -113,6 +117,7 @@ Here’s what your `STATS.md` might look like:
 
 Want to run it without cloning the whole repo? [Download codetime_waster.py](cli/codetime_waster.py)  
 Just run:
+
 ```bash
 python codetime_waster.py --user yourname --repo yourrepo
 ```

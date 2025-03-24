@@ -1,0 +1,7 @@
+# codetime.config.template.yml
+# Rename to codetime.config.yml and fill with your info:
+
+user: your-github-username
+repo: your-repo-name
+mode: fun
+all: false
