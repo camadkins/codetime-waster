@@ -27,7 +27,7 @@ You have **three options** to get started depending on your preference:
 Clone your version of the template:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/codetime-waster.git
+git clone https://github.com/camadkins/codetime-waster.git
 cd codetime-waster
 ```
 
