@@ -2,7 +2,7 @@
 
 **Estimate how much time you've "wasted" writing code on GitHub — and what else you could have done with that time.** Automatically generates a fun (or guilty!) `STATS.md` report based on your commit activity.
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/YOUR_USERNAME/codetime-waster/generate-stats.yml?label=GitHub%20Actions&style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/camadkins/codetime-waster/generate-stats.yml?label=GitHub%20Actions&style=flat-square)
 
 ---
 
