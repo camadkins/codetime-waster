@@ -1,0 +1,402 @@
+[
+  {
+    "activity": "attended a webinar",
+    "hours": 1.29
+  },
+  {
+    "activity": "learned a new skill",
+    "hours": 3.26
+  },
+  {
+    "activity": "learned a new skill",
+    "hours": 2.98
+  },
+  {
+    "activity": "built a portfolio project",
+    "hours": 8.27
+  },
+  {
+    "activity": "attended a webinar",
+    "hours": 1.12
+  },
+  {
+    "activity": "read a tech book",
+    "hours": 5.34
+  },
+  {
+    "activity": "meditated",
+    "hours": 1.0
+  },
+  {
+    "activity": "volunteered",
+    "hours": 2.06
+  },
+  {
+    "activity": "attended a webinar",
+    "hours": 0.95
+  },
+  {
+    "activity": "volunteered",
+    "hours": 1.99
+  },
+  {
+    "activity": "mentored someone",
+    "hours": 0.98
+  },
+  {
+    "activity": "attended a webinar",
+    "hours": 1.44
+  },
+  {
+    "activity": "attended a webinar",
+    "hours": 1.19
+  },
+  {
+    "activity": "learned a new skill",
+    "hours": 2.98
+  },
+  {
+    "activity": "meditated",
+    "hours": 0.4
+  },
+  {
+    "activity": "learned a new skill",
+    "hours": 3.0
+  },
+  {
+    "activity": "read a tech book",
+    "hours": 4.78
+  },
+  {
+    "activity": "wrote a blog post",
+    "hours": 1.94
+  },
+  {
+    "activity": "read a tech book",
+    "hours": 5.0
+  },
+  {
+    "activity": "learned a new skill",
+    "hours": 3.08
+  },
+  {
+    "activity": "ran a 5K",
+    "hours": 0.66
+  },
+  {
+    "activity": "attended a webinar",
+    "hours": 1.01
+  },
+  {
+    "activity": "attended a webinar",
+    "hours": 1.17
+  },
+  {
+    "activity": "read a tech book",
+    "hours": 4.82
+  },
+  {
+    "activity": "read a tech book",
+    "hours": 5.33
+  },
+  {
+    "activity": "wrote a blog post",
+    "hours": 1.8900000000000001
+  },
+  {
+    "activity": "attended a webinar",
+    "hours": 1.42
+  },
+  {
+    "activity": "built a portfolio project",
+    "hours": 8.27
+  },
+  {
+    "activity": "learned a new skill",
+    "hours": 3.43
+  },
+  {
+    "activity": "ran a 5K",
+    "hours": 1.07
+  },
+  {
+    "activity": "volunteered",
+    "hours": 2.43
+  },
+  {
+    "activity": "read a tech book",
+    "hours": 4.99
+  },
+  {
+    "activity": "read a tech book",
+    "hours": 4.98
+  },
+  {
+    "activity": "learned a new skill",
+    "hours": 3.49
+  },
+  {
+    "activity": "volunteered",
+    "hours": 1.87
+  },
+  {
+    "activity": "built a portfolio project",
+    "hours": 8.43
+  },
+  {
+    "activity": "meditated",
+    "hours": 0.4
+  },
+  {
+    "activity": "attended a webinar",
+    "hours": 1.24
+  },
+  {
+    "activity": "mentored someone",
+    "hours": 1.43
+  },
+  {
+    "activity": "meditated",
+    "hours": 0.77
+  },
+  {
+    "activity": "built a portfolio project",
+    "hours": 7.96
+  },
+  {
+    "activity": "meditated",
+    "hours": 0.27
+  },
+  {
+    "activity": "volunteered",
+    "hours": 2.48
+  },
+  {
+    "activity": "volunteered",
+    "hours": 2.12
+  },
+  {
+    "activity": "volunteered",
+    "hours": 1.76
+  },
+  {
+    "activity": "wrote a blog post",
+    "hours": 1.31
+  },
+  {
+    "activity": "built a portfolio project",
+    "hours": 7.92
+  },
+  {
+    "activity": "read a tech book",
+    "hours": 5.41
+  },
+  {
+    "activity": "learned a new skill",
+    "hours": 2.79
+  },
+  {
+    "activity": "ran a 5K",
+    "hours": 0.9
+  },
+  {
+    "activity": "ran a 5K",
+    "hours": 0.83
+  },
+  {
+    "activity": "learned a new skill",
+    "hours": 3.43
+  },
+  {
+    "activity": "attended a webinar",
+    "hours": 1.05
+  },
+  {
+    "activity": "ran a 5K",
+    "hours": 1.1099999999999999
+  },
+  {
+    "activity": "wrote a blog post",
+    "hours": 1.58
+  },
+  {
+    "activity": "built a portfolio project",
+    "hours": 7.99
+  },
+  {
+    "activity": "built a portfolio project",
+    "hours": 8.13
+  },
+  {
+    "activity": "wrote a blog post",
+    "hours": 1.4
+  },
+  {
+    "activity": "meditated",
+    "hours": 0.29000000000000004
+  },
+  {
+    "activity": "ran a 5K",
+    "hours": 0.79
+  },
+  {
+    "activity": "wrote a blog post",
+    "hours": 1.88
+  },
+  {
+    "activity": "learned a new skill",
+    "hours": 3.3
+  },
+  {
+    "activity": "built a portfolio project",
+    "hours": 8.4
+  },
+  {
+    "activity": "ran a 5K",
+    "hours": 0.75
+  },
+  {
+    "activity": "took an online course",
+    "hours": 6.14
+  },
+  {
+    "activity": "read a tech book",
+    "hours": 5.21
+  },
+  {
+    "activity": "volunteered",
+    "hours": 2.2800000000000002
+  },
+  {
+    "activity": "learned a new skill",
+    "hours": 3.07
+  },
+  {
+    "activity": "wrote a blog post",
+    "hours": 1.26
+  },
+  {
+    "activity": "wrote a blog post",
+    "hours": 1.57
+  },
+  {
+    "activity": "mentored someone",
+    "hours": 0.76
+  },
+  {
+    "activity": "took an online course",
+    "hours": 6.37
+  },
+  {
+    "activity": "ran a 5K",
+    "hours": 1.07
+  },
+  {
+    "activity": "meditated",
+    "hours": 0.47
+  },
+  {
+    "activity": "took an online course",
+    "hours": 6.44
+  },
+  {
+    "activity": "mentored someone",
+    "hours": 0.89
+  },
+  {
+    "activity": "attended a webinar",
+    "hours": 1.35
+  },
+  {
+    "activity": "volunteered",
+    "hours": 2.33
+  },
+  {
+    "activity": "ran a 5K",
+    "hours": 0.53
+  },
+  {
+    "activity": "took an online course",
+    "hours": 5.78
+  },
+  {
+    "activity": "wrote a blog post",
+    "hours": 1.97
+  },
+  {
+    "activity": "ran a 5K",
+    "hours": 0.79
+  },
+  {
+    "activity": "attended a webinar",
+    "hours": 0.84
+  },
+  {
+    "activity": "attended a webinar",
+    "hours": 1.18
+  },
+  {
+    "activity": "took an online course",
+    "hours": 6.39
+  },
+  {
+    "activity": "took an online course",
+    "hours": 6.49
+  },
+  {
+    "activity": "built a portfolio project",
+    "hours": 7.76
+  },
+  {
+    "activity": "attended a webinar",
+    "hours": 1.07
+  },
+  {
+    "activity": "attended a webinar",
+    "hours": 1.13
+  },
+  {
+    "activity": "volunteered",
+    "hours": 2.35
+  },
+  {
+    "activity": "wrote a blog post",
+    "hours": 1.54
+  },
+  {
+    "activity": "learned a new skill",
+    "hours": 2.99
+  },
+  {
+    "activity": "wrote a blog post",
+    "hours": 1.54
+  },
+  {
+    "activity": "built a portfolio project",
+    "hours": 8.13
+  },
+  {
+    "activity": "read a tech book",
+    "hours": 5.2
+  },
+  {
+    "activity": "took an online course",
+    "hours": 6.44
+  },
+  {
+    "activity": "read a tech book",
+    "hours": 5.46
+  },
+  {
+    "activity": "wrote a blog post",
+    "hours": 1.98
+  },
+  {
+    "activity": "attended a webinar",
+    "hours": 1.45
+  },
+  {
+    "activity": "learned a new skill",
+    "hours": 3.14
+  }
+]
