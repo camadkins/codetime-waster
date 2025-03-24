@@ -3,6 +3,7 @@ from codetime.github_api import fetch_commits
 from codetime.time_estimator import group_commits_into_sessions, estimate_total_time
 from codetime.fun_converter import convert_time_to_activities
 from codetime.utils import generate_stats_md, generate_config_file, load_config
+from codetime.utils import get_user_repos
 
 def parse_args():
     parser = argparse.ArgumentParser(description="CodeTime Waster - Estimate your wasted GitHub time")
@@ -38,8 +39,9 @@ def main():
     if not user or (not repo and not use_all):
         print("❌ Error: Missing required user/repo. Use CLI args or generate with --init.")
         return
+    
+    repos = [repo] if not use_all else get_user_repos(user)
 
-    repos = [repo] if not use_all else []  # --all not implemented yet
     all_commits = []
 
     for repo in repos:

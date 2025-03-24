@@ -1,5 +1,6 @@
 import yaml
 import os
+import requests
 
 def generate_stats_md(username, repos, session_count, total_hours, alt_activities):
     with open("STATS.md", "w") as f:
@@ -29,3 +30,24 @@ def load_config():
         return {}
     with open(config_path, "r") as f:
         return yaml.safe_load(f)
+
+def get_user_repos(user):
+    """Fetch all public repos for the given GitHub user."""
+    repos = []
+    page = 1
+    per_page = 100
+    while True:
+        url = f"https://api.github.com/users/{user}/repos"
+        params = {"per_page": per_page, "page": page}
+        response = requests.get(url, params=params)
+        if response.status_code != 200:
+            print(f"⚠️ Failed to fetch repos for user {user} (HTTP {response.status_code})")
+            break
+        data = response.json()
+        if not data:
+            break
+        repos.extend([repo["name"] for repo in data])
+        if len(data) < per_page:
+            break
+        page += 1
+    return repos

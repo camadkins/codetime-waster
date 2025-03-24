@@ -10,6 +10,30 @@ from datetime import datetime, timedelta
 
 # ========== GitHub API ==========
 
+
+import requests
+
+def get_user_repos(user):
+    """Fetch all public repos for the given GitHub user."""
+    repos = []
+    page = 1
+    per_page = 100
+    while True:
+        url = f"https://api.github.com/users/{user}/repos"
+        params = {"per_page": per_page, "page": page}
+        response = requests.get(url, params=params)
+        if response.status_code != 200:
+            print(f"⚠️ Failed to fetch repos for user {user} (HTTP {response.status_code})")
+            break
+        data = response.json()
+        if not data:
+            break
+        repos.extend([repo["name"] for repo in data])
+        if len(data) < per_page:
+            break
+        page += 1
+    return repos
+
 def fetch_commits(user, repo, per_page=100):
     commits = []
     page = 1
@@ -160,7 +184,7 @@ def main():
         print("❌ Error: Missing required user/repo. Use CLI args or generate with --init.")
         return
 
-    repos = [repo] if not use_all else []
+    repos = [repo] if not use_all else get_user_repos(user)
     all_commits = []
 
     for repo in repos:

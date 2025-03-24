@@ -42,13 +42,11 @@ python cli/codetime_waster.py --user yourgithub --repo yourrepo --mode fun
 ### 🛠 Option 2: Local Config + GitHub Actions
 
 1. Generate a config file:
-
    ```bash
    python cli/codetime_waster.py --init --user yourgithub --repo yourrepo --mode guilty
    ```
 
 2. Commit it:
-
    ```bash
    git add codetime.config.yml
    git commit -m "Add my config"
@@ -64,14 +62,12 @@ python cli/codetime_waster.py --user yourgithub --repo yourrepo --mode fun
 1. Click **"Use this template"** (top of the repo)
 2. In your new repo:
    - Add or edit `codetime.config.yml` in the GitHub UI:
-
      ```yaml
      user: yourgithub
      repo: yourrepo
      mode: fun
      all: false
      ```
-
 3. Commit the change to `main`
 4. Go to **Actions** → Run the job
 5. `STATS.md` will be generated and pushed automatically every Sunday 🎉
@@ -117,7 +113,6 @@ Here’s what your `STATS.md` might look like:
 
 Want to run it without cloning the whole repo? [Download codetime_waster.py](cli/codetime_waster.py)  
 Just run:
-
 ```bash
 python codetime_waster.py --user yourname --repo yourrepo
 ```
@@ -130,6 +125,29 @@ python codetime_waster.py --user yourname --repo yourrepo
 - Groups them into "sessions" based on gaps
 - Multiplies session count by average time (30 minutes)
 - Shows you what else you could’ve done in that time 😅
+
+---
+
+
+## 🛠 API Rate Limits
+
+GitHub's API has a **rate limit** that restricts the number of requests you can make:
+
+- **Unauthenticated users**: 60 requests per hour
+- **Authenticated users**: 5000 requests per hour (using a Personal Access Token)
+
+### What this means for you:
+- If you're only analyzing a few repos at a time, the limit will likely not be an issue.
+- If you're analyzing **many repos** (especially in the `--all` mode), you may hit the rate limit after several requests.
+
+#### To increase the limit:
+Use a **GitHub Personal Access Token (PAT)** to authenticate requests. You can pass your token with the `--token` argument:
+
+```bash
+python cli/codetime_waster.py --user yourusername --all --mode fun --token YOUR_GITHUB_TOKEN
+```
+
+Generate a token from your GitHub [Personal Access Tokens page](https://github.com/settings/tokens).
 
 ---
 
