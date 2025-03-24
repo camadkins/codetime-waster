@@ -167,3 +167,11 @@ pip install -r requirements.txt
 Contributions welcome! Fork it, build your twist, and tag me.
 
 MIT License • Made with 💻 by [camadkins](https://github.com/camadkins)
+
+## 🙌 Support the Project
+
+If you enjoyed this project and want me to keep making more programs, consider buying me a coffee! ☕️
+
+[Buy me a coffee on Ko-Fi](https://ko-fi.com/camadkins)
+
+Every little bit helps, and I really appreciate it! 🙏
