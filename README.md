@@ -124,6 +124,42 @@ python codetime_waster.py --user yourname --repo yourrepo
 
 ---
 
+### ✅ CLI Usage
+
+```bash
+python cli/codetime_waster.py --user yourgithub --repo yourrepo --mode fun
+```
+
+#### Arguments
+
+- `--user`: **Required**: Your GitHub username.
+- `--repo`: **Optional**: The specific GitHub repo to analyze. If not provided, and `--all` is not used, the program will not know which repo to analyze.
+- `--all`: **Optional**: If this flag is used, the program will analyze **all public repositories** of the specified user.
+- `--mode`: **Optional**: Choose the tone of the output. Available options:
+  - `fun`: Default, provides lighthearted alternatives for your wasted time.
+  - `guilty`: Gives you a more guilty perspective of how you could have used that time.
+  - `inspirational`: Offers motivational alternatives to your wasted time.
+  - `corporate`: Provides a corporate-like perspective (e.g., meetings, emails).
+- `--init`: **Optional**: Creates a `codetime.config.yml` file based on your input.
+- `--token`: **Optional**: (Future feature) GitHub Personal Access Token (PAT) to increase the API rate limit (not implemented yet).
+  
+---
+
+### **Example Commands**
+
+```bash
+# Analyze one specific repo (default mode is 'fun')
+python cli/codetime_waster.py --user yourgithub --repo yourrepo
+
+# Analyze all repos for the user
+python cli/codetime_waster.py --user yourgithub --all
+
+# Use the 'guilty' mode
+python cli/codetime_waster.py --user yourgithub --repo yourrepo --mode guilty
+```
+
+---
+
 ## 🧠 How It Works
 
 - Fetches your commit timestamps via GitHub's API
