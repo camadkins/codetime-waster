@@ -7,15 +7,18 @@ from codetime.utils import get_user_repos
 
 def parse_args():
     parser = argparse.ArgumentParser(description="CodeTime Waster - Estimate your wasted GitHub time")
-
-    parser.add_argument("--user", help="GitHub username")
+    parser.add_argument("--user", required=True, help="GitHub username")
     parser.add_argument("--repo", help="GitHub repo name (required unless --all is used)")
-    parser.add_argument("--all", action="store_true", help="Analyze all public repos (not yet implemented)")
-    parser.add_argument("--mode", choices=["fun", "guilty", "inspirational", "corporate"], default=None,
+    parser.add_argument("--all", action="store_true", help="Analyze all public repos")
+    parser.add_argument("--mode", choices=["fun", "guilty", "inspirational", "corporate"], default="fun",
                         help="Output tone (default: fun)")
     parser.add_argument("--init", action="store_true", help="Create a codetime.config.yml from CLI args")
 
-    return parser.parse_args()
+    try:
+        return parser.parse_args()
+    except SystemExit:
+        print("\nInvalid arguments. Use '--help' for usage information.")
+        exit(0)
 
 def main():
     args = parse_args()
