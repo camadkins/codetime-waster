@@ -186,7 +186,11 @@ def main():
         print("❌ Error: Missing required user/repo. Use CLI args or generate with --init.")
         return
 
-    repos = [repo] if not use_all else get_user_repos(user)
+    # Fix: Only use --all if no --repo is provided
+    if use_all and repo:
+        print("⚠️ Warning: --repo is ignored when --all is used.")
+    repos = [repo] if repo else get_user_repos(user)  # Use specific repo or all repos
+
     all_commits = []
 
     for repo in repos:
@@ -210,6 +214,7 @@ def main():
         print(line)
 
     generate_stats_md(user, repos, sessions, hours_wasted, activity_output)
+
 
 if __name__ == "__main__":
     main()
