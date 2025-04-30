@@ -3,10 +3,14 @@
 **User**: `camadkins`
 **Repos analyzed**: codetime-waster`
 
-**Estimated coding sessions**: `1`
-**Total time wasted**: `0.5 hours` 😅
+**Estimated coding sessions**: `3`
+**Total time wasted**: `1.5 hours` 😅
 
 ## 🌀 Instead, you could have:
 
-- Watched cat videos on youtube 1 times
-- Wrote a useless bash script 2 times
+- Played a video game session 1 times
+- Doomscrolled twitter/x 1 times
+- Wrote a useless bash script 3 times
+- Scrolled reddit endlessly 1 times
+- Watched cat videos on youtube 5 times
+- Played 3 arams in league 1 times
