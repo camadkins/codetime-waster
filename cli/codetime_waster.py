@@ -4,14 +4,12 @@ import argparse
 import json
 import os
 import random
+import sys
 import requests
 import yaml
 from datetime import datetime, timedelta
 
 # ========== GitHub API ==========
-
-
-import requests
 
 def get_user_repos(user):
     """Fetch all public repos for the given GitHub user."""
@@ -153,7 +151,7 @@ def generate_stats_md(username, repos, session_count, total_hours, alt_activitie
 
 def parse_args():
     parser = argparse.ArgumentParser(description="CodeTime Waster - Estimate your wasted GitHub time")
-    parser.add_argument("--user", required=True, help="GitHub username")
+    parser.add_argument("--user", help="GitHub username (fallbacks to config file)")
     parser.add_argument("--repo", help="GitHub repo name (required unless --all is used)")
     parser.add_argument("--all", action="store_true", help="Analyze all public repos")
     parser.add_argument("--mode", choices=["fun", "guilty", "inspirational", "corporate"], default="fun",
@@ -164,7 +162,7 @@ def parse_args():
         return parser.parse_args()
     except SystemExit:
         print("\nInvalid arguments. Use '--help' for usage information.")
-        exit(0)
+        sys.exit(0)
 
 def main():
     args = parse_args()
@@ -214,7 +212,6 @@ def main():
         print(line)
 
     generate_stats_md(user, repos, sessions, hours_wasted, activity_output)
-
 
 if __name__ == "__main__":
     main()

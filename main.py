@@ -1,4 +1,5 @@
 import argparse
+import sys
 from codetime.github_api import fetch_commits
 from codetime.time_estimator import group_commits_into_sessions, estimate_total_time
 from codetime.fun_converter import convert_time_to_activities
@@ -7,7 +8,7 @@ from codetime.utils import get_user_repos
 
 def parse_args():
     parser = argparse.ArgumentParser(description="CodeTime Waster - Estimate your wasted GitHub time")
-    parser.add_argument("--user", required=True, help="GitHub username")
+    parser.add_argument("--user", help="GitHub username (fallbacks to config file)")
     parser.add_argument("--repo", help="GitHub repo name (required unless --all is used)")
     parser.add_argument("--all", action="store_true", help="Analyze all public repos")
     parser.add_argument("--mode", choices=["fun", "guilty", "inspirational", "corporate"], default="fun",
@@ -18,7 +19,7 @@ def parse_args():
         return parser.parse_args()
     except SystemExit:
         print("\nInvalid arguments. Use '--help' for usage information.")
-        exit(0)
+        sys.exit(0)
 
 def main():
     args = parse_args()
@@ -31,14 +32,11 @@ def main():
         generate_config_file(args.user, args.repo, args.mode or "fun", args.all)
         return
 
-    # Load config from file (if CLI args are missing)
+    # Load config from file
     config = load_config()
-
     user = args.user or config.get("user")
     repo = args.repo or config.get("repo")
     mode = args.mode or config.get("mode", "fun")
-
-    # Fix: Only use all if repo is not specified
     use_all = args.all or (config.get("all", False) if not repo else False)
 
     if not user or (not repo and not use_all):
