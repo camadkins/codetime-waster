@@ -180,16 +180,16 @@ def main():
     user = args.user or config.get("user")
     repo = args.repo or config.get("repo")
     mode = args.mode or config.get("mode", "fun")
-    use_all = args.all or config.get("all", False)
+    use_all = args.all or (config.get("all", False) if not repo else False)
 
     if not user or (not repo and not use_all):
         print("❌ Error: Missing required user/repo. Use CLI args or generate with --init.")
         return
 
-    # Fix: Only use --all if no --repo is provided
-    if use_all and repo:
-        print("⚠️ Warning: --repo is ignored when --all is used.")
-    repos = [repo] if repo else get_user_repos(user)  # Use specific repo or all repos
+    if repo and use_all:
+        print("⚠️ Warning: `repo` is specified — ignoring `all: true` and using only that repo.")
+
+    repos = [repo] if repo else get_user_repos(user)
 
     all_commits = []
 
