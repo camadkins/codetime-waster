@@ -8,9 +8,9 @@
 
 ## 🌀 Instead, you could have:
 
-- Played a video game session 1 times
-- Doomscrolled twitter/x 1 times
-- Wrote a useless bash script 3 times
+- Wrote a useless bash script 1 times
+- Watched cat videos on youtube 9 times
+- Doomscrolled twitter/x 2 times
 - Scrolled reddit endlessly 1 times
-- Watched cat videos on youtube 5 times
 - Played 3 arams in league 1 times
+- Played a video game session 1 times
