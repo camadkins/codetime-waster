@@ -399,4 +399,44 @@
     "activity": "watched a Marvel movie",
     "hours": 2.37
   }
+    {
+    "activity": "customized your terminal prompt for the 12th time",
+    "hours": 0.78
+  },
+  {
+    "activity": "watched an entire Blender tutorial with no intention to 3D model anything",
+    "hours": 2.26
+  },
+  {
+    "activity": "argued about keyboard layouts on Discord",
+    "hours": 1.04
+  },
+  {
+    "activity": "organized your Steam library instead of playing a game",
+    "hours": 0.92
+  },
+  {
+    "activity": "browsed r/mechanicalkeyboards without buying anything",
+    "hours": 0.65
+  },
+  {
+    "activity": "fell down a Wikipedia rabbit hole about Roman plumbing",
+    "hours": 1.73
+  },
+  {
+    "activity": "watched speedruns of games you’ve never played",
+    "hours": 1.58
+  },
+  {
+    "activity": "benchmarked your CPU for no reason",
+    "hours": 0.49
+  },
+  {
+    "activity": "got distracted while setting a productivity timer",
+    "hours": 0.34
+  },
+  {
+    "activity": "compared GPU prices for a card you’re not buying",
+    "hours": 1.1
+  }
 ]
