@@ -5,3 +5,4 @@ user: your-github-username
 repo: your-repo-name
 mode: fun
 all: false
+include-forks: false
