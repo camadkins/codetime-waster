@@ -178,23 +178,34 @@ def main():
     user = args.user or config.get("user")
     repo = args.repo or config.get("repo")
     mode = args.mode or config.get("mode", "fun")
-    use_all = args.all or (config.get("all", False) if not repo else False)
+    
+    # Fix: Properly handle the 'all' setting from config
+    # CLI --all flag takes precedence, otherwise use config value
+    use_all = args.all or config.get("all", False)
 
     if not user or (not repo and not use_all):
         print("❌ Error: Missing required user/repo. Use CLI args or generate with --init.")
         return
 
-    if repo and use_all:
-        print("⚠️ Warning: `repo` is specified — ignoring `all: true` and using only that repo.")
+    # Fix: Only show warning and override if both repo AND all are explicitly set via CLI
+    if args.repo and args.all:
+        print("⚠️ Warning: Both --repo and --all specified via CLI — using --all.")
+        use_all = True
 
-    repos = [repo] if repo else get_user_repos(user)
+    # Determine which repos to analyze
+    if use_all:
+        repos = get_user_repos(user)
+        print(f"Analyzing all {len(repos)} repositories for user {user}")
+    else:
+        repos = [repo]
+        print(f"Analyzing single repository: {repo}")
 
     all_commits = []
 
-    for repo in repos:
-        commits = fetch_commits(user, repo)
+    for repo_name in repos:
+        commits = fetch_commits(user, repo_name)
         all_commits.extend(commits)
-        print(f"Fetched {len(commits)} commits from {repo}.")
+        print(f"Fetched {len(commits)} commits from {repo_name}.")
 
     if not all_commits:
         print("⚠️ No commits found. Skipping analysis.")
