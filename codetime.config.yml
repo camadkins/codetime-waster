@@ -2,3 +2,4 @@ all: true
 mode: fun
 repo: codetime-waster
 user: camadkins
+include_forks: false
