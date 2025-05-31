@@ -13,12 +13,13 @@ def generate_stats_md(username, repos, session_count, total_hours, alt_activitie
         for item in alt_activities:
             f.write(f"{item}\n")
 
-def generate_config_file(user, repo, mode="fun", use_all=False):
+def generate_config_file(user, repo, mode="fun", use_all=False, include_forks=False):
     config = {
         "user": user,
         "repo": repo,
         "mode": mode,
-        "all": use_all
+        "all": use_all,
+        "include_forks": include_forks
     }
     with open("codetime.config.yml", "w") as f:
         yaml.dump(config, f)
@@ -31,7 +32,7 @@ def load_config():
     with open(config_path, "r") as f:
         return yaml.safe_load(f)
 
-def get_user_repos(user):
+def get_user_repos(user, include_forks=False):
     """Fetch all public repos for the given GitHub user."""
     repos = []
     page = 1
@@ -46,8 +47,20 @@ def get_user_repos(user):
         data = response.json()
         if not data:
             break
-        repos.extend([repo["name"] for repo in data])
+        
+        for repo in data:
+            # Skip forks unless explicitly requested
+            if repo["fork"] and not include_forks:
+                continue
+            repos.append(repo["name"])
+            
         if len(data) < per_page:
             break
         page += 1
+    
+    if not include_forks:
+        print(f"Found {len(repos)} non-fork repositories (forks excluded)")
+    else:
+        print(f"Found {len(repos)} repositories (including forks)")
+    
     return repos
