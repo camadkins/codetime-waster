@@ -11,6 +11,7 @@ def parse_args():
     parser.add_argument("--user", help="GitHub username (fallbacks to config file)")
     parser.add_argument("--repo", help="GitHub repo name (required unless --all is used)")
     parser.add_argument("--all", action="store_true", help="Analyze all public repos")
+    parser.add_argument("--include-forks", action="store_true", help="Include forked repositories in analysis")
     parser.add_argument("--mode", choices=["fun", "guilty", "inspirational", "corporate"], default="fun",
                         help="Output tone (default: fun)")
     parser.add_argument("--init", action="store_true", help="Create a codetime.config.yml from CLI args")
@@ -29,7 +30,7 @@ def main():
         if not args.user or (not args.repo and not args.all):
             print("❌ Error: --init requires at least --user and --repo or --all.")
             return
-        generate_config_file(args.user, args.repo, args.mode or "fun", args.all)
+        generate_config_file(args.user, args.repo, args.mode or "fun", args.all, args.include_forks)
         return
 
     # Load config from file
@@ -41,6 +42,9 @@ def main():
     # Fix: Properly handle the 'all' setting from config
     # CLI --all flag takes precedence, otherwise use config value
     use_all = args.all or config.get("all", False)
+    
+    # Handle include_forks setting
+    include_forks = args.include_forks or config.get("include_forks", False)
 
     if not user or (not repo and not use_all):
         print("❌ Error: Missing required user/repo. Use CLI args or generate with --init.")
@@ -53,8 +57,11 @@ def main():
 
     # Determine which repos to analyze
     if use_all:
-        repos = get_user_repos(user)
-        print(f"Analyzing all {len(repos)} repositories for user {user}")
+        repos = get_user_repos(user, include_forks)
+        if include_forks:
+            print(f"Analyzing all {len(repos)} repositories (including forks) for user {user}")
+        else:
+            print(f"Analyzing all {len(repos)} repositories (excluding forks) for user {user}")
     else:
         repos = [repo]
         print(f"Analyzing single repository: {repo}")
