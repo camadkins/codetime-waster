@@ -6,23 +6,23 @@
 
 ---
 
-## ⚡ Features
+## Features
 
-- 🧠 Smart session estimation from GitHub commit history
-- 🔁 Weekly GitHub Action that updates `STATS.md`
-- 😅 Modes: `fun`, `guilty`, `inspirational`, and `corporate`
-- 💻 CLI version available for local use
-- 📦 GitHub template — easily clone and personalize
+-  Smart session estimation from GitHub commit history
+-  Weekly GitHub Action that updates `STATS.md`
+-  Modes: `fun`, `guilty`, `inspirational`, and `corporate`
+-  CLI version available for local use
+-  GitHub template — easily clone and personalize
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 You have **three options** to get started depending on your preference:
 
 ---
 
-### ✅ Option 1: Run Locally via CLI
+###  Option 1: Run Locally via CLI
 
 Clone your version of the template:
 
@@ -39,7 +39,7 @@ python cli/codetime_waster.py --user yourgithub --repo yourrepo --mode fun
 
 ---
 
-### 🛠 Option 2: Local Config + GitHub Actions
+###  Option 2: Local Config + GitHub Actions
 
 1. Generate a config file:
 
@@ -59,7 +59,7 @@ python cli/codetime_waster.py --user yourgithub --repo yourrepo --mode fun
 
 ---
 
-### ☁️ Option 3: GitHub-Only Setup (No Download)
+###  Option 3: GitHub-Only Setup (No Download)
 
 1. Click **"Use this template"** (top of the repo)
 2. In your new repo:
@@ -78,7 +78,7 @@ python cli/codetime_waster.py --user yourgithub --repo yourrepo --mode fun
 
 ---
 
-## 🔁 How GitHub Action Works
+##  How GitHub Action Works
 
 This repo includes a pre-configured GitHub Action that:
 
@@ -91,7 +91,7 @@ No maintenance needed.
 
 ---
 
-## 📄 Sample Output
+##  Sample Output
 
 Here’s what your `STATS.md` might look like:
 
@@ -113,7 +113,7 @@ Here’s what your `STATS.md` might look like:
 
 ---
 
-## 📥 Download CLI Version
+##  Download CLI Version
 
 Want to run it without cloning the whole repo? [Download codetime_waster.py](cli/codetime_waster.py)  
 Just run:
@@ -124,7 +124,7 @@ python codetime_waster.py --user yourname --repo yourrepo
 
 ---
 
-### ✅ CLI Usage
+###  CLI Usage
 
 ```bash
 python cli/codetime_waster.py --user yourgithub --repo yourrepo --mode fun
@@ -160,7 +160,7 @@ python cli/codetime_waster.py --user yourgithub --repo yourrepo --mode guilty
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 - Fetches your commit timestamps via GitHub's API
 - Groups them into "sessions" based on gaps
@@ -169,7 +169,7 @@ python cli/codetime_waster.py --user yourgithub --repo yourrepo --mode guilty
 
 ---
 
-## 🛠 API Rate Limits
+##  API Rate Limits
 
 GitHub's API has a **rate limit** that restricts the number of requests you can make:
 
@@ -185,7 +185,7 @@ You can always wait for the limit to reset, or consider **reducing the number of
 
 ---
 
-## 🧰 Requirements
+##  Requirements
 
 - Python 3.9+
 - `requests`, `pyyaml`
@@ -198,13 +198,13 @@ pip install -r requirements.txt
 
 ---
 
-## 🙌 Contributing & License
+##  Contributing & License
 
 Contributions welcome! Fork it, build your twist, and tag me.
 
 MIT License • Made with 💻 by [camadkins](https://github.com/camadkins)
 
-## 🙌 Support the Project
+##  Support the Project
 
 If you enjoyed this project and want me to keep making more programs, consider buying me a coffee! ☕️
 
