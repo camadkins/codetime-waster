@@ -3,18 +3,18 @@
 **User**: `camadkins`
 **Repos analyzed**: .dev, codetime-waster, file-indexer, obsidian-canvas-connect`
 
-**Estimated coding sessions**: `30`
-**Total time wasted**: `15.0 hours` 😅
+**Estimated coding sessions**: `31`
+**Total time wasted**: `15.5 hours` 😅
 
 ## 🌀 Instead, you could have:
 
-- Customized your terminal prompt for the 12th time 19 times
-- Played a video game session 9 times
-- Built a minecraft base 4 times
-- Wrote a useless bash script 38 times
-- Watched a marvel movie 6 times
-- Re-watched the office 3 times
 - Played 3 arams in league 13 times
+- Wrote a useless bash script 44 times
+- Watched a marvel movie 5 times
+- Watched an entire blender tutorial with no intention to 3d model anything 6 times
+- Watched cat videos on youtube 24 times
+- Re-watched the office 3 times
+- Played a video game session 8 times
+- Doomscrolled twitter/x 13 times
 - Scrolled reddit endlessly 14 times
-- Watched cat videos on youtube 1499 times
-- Doomscrolled twitter/x 15 times
+- Watched speedruns of games you’ve never played 9 times
