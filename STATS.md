@@ -3,18 +3,18 @@
 **User**: `camadkins`
 **Repos analyzed**: .dev-notes, codetime-waster, file-indexer, obsidian-canvas-connect`
 
-**Estimated coding sessions**: `869`
-**Total time wasted**: `434.5 hours` 😅
+**Estimated coding sessions**: `873`
+**Total time wasted**: `436.5 hours` 😅
 
 ## 🌀 Instead, you could have:
 
-- Reorganized your notion workspace 206 times
-- Wrote a useless bash script 1738 times
-- Scrolled reddit endlessly 331 times
-- Played a video game session 227 times
-- Customized your terminal prompt for the 12th time 557 times
-- Doomscrolled twitter/x 648 times
-- Built a minecraft base 155 times
-- Re-watched the office 105 times
-- Fell down a wikipedia rabbit hole about roman plumbing 251 times
-- Watched a marvel movie 169 times
+- Built a minecraft base 148 times
+- Re-watched the office 111 times
+- Watched a marvel movie 154 times
+- Played 3 arams in league 373 times
+- Played a video game session 267 times
+- Scrolled reddit endlessly 479 times
+- Wrote a useless bash script 948 times
+- Watched cat videos on youtube 2728 times
+- Doomscrolled twitter/x 739 times
+- Organized your steam library instead of playing a game 474 times
