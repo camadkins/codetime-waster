@@ -11,7 +11,7 @@ from datetime import datetime, timedelta
 
 # ========== GitHub API ==========
 
-def get_user_repos(user):
+def get_user_repos(user, include_forks=False):
     """Fetch all public repos for the given GitHub user."""
     repos = []
     page = 1
@@ -26,7 +26,13 @@ def get_user_repos(user):
         data = response.json()
         if not data:
             break
-        repos.extend([repo["name"] for repo in data])
+
+        for repo in data:
+            # Skip forks unless explicitly requested
+            if repo["fork"] and not include_forks:
+                continue
+            repos.append(repo["name"])
+
         if len(data) < per_page:
             break
         page += 1
@@ -121,8 +127,14 @@ def convert_time_to_activities(total_hours, activity_count=10, mode="fun"):
 
 # ========== Config Helpers ==========
 
-def generate_config_file(user, repo, mode="fun", use_all=False):
-    config = {"user": user, "repo": repo, "mode": mode, "all": use_all}
+def generate_config_file(user, repo, mode="fun", use_all=False, include_forks=False):
+    config = {
+        "user": user,
+        "repo": repo,
+        "mode": mode,
+        "all": use_all,
+        "include_forks": include_forks
+    }
     with open("codetime.config.yml", "w") as f:
         yaml.dump(config, f)
     print("✅ Config file saved to codetime.config.yml")
@@ -154,6 +166,7 @@ def parse_args():
     parser.add_argument("--user", help="GitHub username (fallbacks to config file)")
     parser.add_argument("--repo", help="GitHub repo name (required unless --all is used)")
     parser.add_argument("--all", action="store_true", help="Analyze all public repos")
+    parser.add_argument("--include-forks", action="store_true", help="Include forked repositories in analysis")
     parser.add_argument("--mode", choices=["fun", "guilty", "inspirational", "corporate"], default="fun",
                         help="Output tone (default: fun)")
     parser.add_argument("--init", action="store_true", help="Create a codetime.config.yml from CLI args")
@@ -171,17 +184,20 @@ def main():
         if not args.user or (not args.repo and not args.all):
             print("❌ Error: --init requires at least --user and --repo or --all.")
             return
-        generate_config_file(args.user, args.repo, args.mode or "fun", args.all)
+        generate_config_file(args.user, args.repo, args.mode or "fun", args.all, args.include_forks)
         return
 
     config = load_config()
     user = args.user or config.get("user")
     repo = args.repo or config.get("repo")
     mode = args.mode or config.get("mode", "fun")
-    
+
     # Fix: Properly handle the 'all' setting from config
     # CLI --all flag takes precedence, otherwise use config value
     use_all = args.all or config.get("all", False)
+
+    # Handle include_forks setting
+    include_forks = args.include_forks or config.get("include_forks", False)
 
     if not user or (not repo and not use_all):
         print("❌ Error: Missing required user/repo. Use CLI args or generate with --init.")
@@ -194,8 +210,11 @@ def main():
 
     # Determine which repos to analyze
     if use_all:
-        repos = get_user_repos(user)
-        print(f"Analyzing all {len(repos)} repositories for user {user}")
+        repos = get_user_repos(user, include_forks)
+        if include_forks:
+            print(f"Analyzing all {len(repos)} repositories (including forks) for user {user}")
+        else:
+            print(f"Analyzing all {len(repos)} repositories (excluding forks) for user {user}")
     else:
         repos = [repo]
         print(f"Analyzing single repository: {repo}")
