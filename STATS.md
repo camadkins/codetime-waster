@@ -8,13 +8,13 @@
 
 ## 🌀 Instead, you could have:
 
-- Wrote a useless bash script 575 times
-- Re-watched the office 100 times
-- Customized your terminal prompt for the 12th time 567 times
-- Built a minecraft base 134 times
-- Watched cat videos on youtube 44299 times
 - Played a video game session 278 times
-- Watched a marvel movie 180 times
-- Watched an entire blender tutorial with no intention to 3d model anything 196 times
+- Built a minecraft base 159 times
+- Re-watched the office 107 times
+- Played 3 arams in league 301 times
+- Watched cat videos on youtube 2768 times
+- Doomscrolled twitter/x 388 times
+- Watched a marvel movie 188 times
+- Browsed r/mechanicalkeyboards without buying anything 681 times
 - Reorganized your notion workspace 186 times
-- Scrolled reddit endlessly 486 times
+- Scrolled reddit endlessly 414 times
