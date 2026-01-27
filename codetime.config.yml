@@ -1,5 +1,5 @@
 all: true
 mode: fun
-repo: codetime-waster
+repo: null
 user: camadkins
 include_forks: false
