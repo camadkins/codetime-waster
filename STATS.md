@@ -1,20 +1,20 @@
 # 📊 CodeTime Waster Report
 
 **User**: `camadkins`
-**Repos analyzed**: .dev, .dev-blog, .dev-notes, .dev-theme, codetime-waster, obsidian-canvas-connect, policy-core, sentinel-wing`
+**Repos analyzed**: .dev, .dev-blog, .dev-notes, .dev-theme, codetime-waster, obsidian-canvas-connect, policy-core`
 
-**Estimated coding sessions**: `948`
-**Total time wasted**: `474.0 hours` 😅
+**Estimated coding sessions**: `944`
+**Total time wasted**: `472.0 hours` 😅
 
 ## 🌀 Instead, you could have:
 
-- Doomscrolled twitter/x 520 times
-- Scrolled reddit endlessly 442 times
-- Re-watched the office 122 times
-- Compared gpu prices for a card you’re not buying 430 times
-- Watched a marvel movie 168 times
-- Played a video game session 269 times
-- Reorganized your notion workspace 241 times
-- Wrote a useless bash script 1215 times
-- Organized your steam library instead of playing a game 515 times
-- Built a minecraft base 137 times
+- Watched a marvel movie 166 times
+- Re-watched the office 107 times
+- Watched cat videos on youtube 1048 times
+- Reorganized your notion workspace 224 times
+- Scrolled reddit endlessly 518 times
+- Built a minecraft base 153 times
+- Doomscrolled twitter/x 417 times
+- Played a video game session 256 times
+- Argued about keyboard layouts on discord 453 times
+- Played 3 arams in league 396 times
