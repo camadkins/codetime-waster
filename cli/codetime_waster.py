@@ -21,7 +21,7 @@ def get_user_repos(user, include_forks=False):
         params = {"per_page": per_page, "page": page}
         response = requests.get(url, params=params)
         if response.status_code != 200:
-            print(f"⚠️ Failed to fetch repos for user {user} (HTTP {response.status_code})")
+            print(f"Failed to fetch repos for user {user} (HTTP {response.status_code})")
             break
         data = response.json()
         if not data:
@@ -100,7 +100,7 @@ def estimate_total_time(session_count, avg_minutes_per_session=30):
 def load_activities(mode="fun"):
     path = f"data/activities_{mode}.json"
     if not os.path.exists(path):
-        print(f"⚠️ Activity file not found for mode: {mode}")
+        print(f"Activity file not found for mode: {mode}")
         return []
     with open(path, "r") as f:
         return json.load(f)
@@ -117,7 +117,7 @@ def convert_time_to_activities(total_hours, activity_count=10, mode="fun"):
 
         units = int(total_hours // item["hours"])
         if units > 0:
-            results.append(f"- {item['activity'].capitalize()} {units} times")
+            results.append(f"- {item['activity'][0].upper()}{item['activity'][1:]} {units} times")
             used_activities.add(item["activity"])
 
         if len(results) >= activity_count:
@@ -137,7 +137,7 @@ def generate_config_file(user, repo, mode="fun", use_all=False, include_forks=Fa
     }
     with open("codetime.config.yml", "w") as f:
         yaml.dump(config, f)
-    print("✅ Config file saved to codetime.config.yml")
+    print("Config file saved to codetime.config.yml")
 
 def load_config():
     try:
@@ -150,12 +150,12 @@ def load_config():
 
 def generate_stats_md(username, repos, session_count, total_hours, alt_activities):
     with open("STATS.md", "w") as f:
-        f.write("# 📊 CodeTime Waster Report\n\n")
+        f.write("# CodeTime Waster Report\n\n")
         f.write(f"**User**: `{username}`  ")
         f.write(f"Repos analyzed: {', '.join(repos) if repos else 'N/A'}\n\n")
         f.write(f"**Estimated coding sessions**: `{session_count}`  ")
-        f.write(f"Total time wasted: `{total_hours} hours` 😅\n\n")
-        f.write("## 🌀 Instead, you could have:\n\n")
+        f.write(f"Total time wasted: `{total_hours} hours`\n\n")
+        f.write("## Instead, you could have:\n\n")
         for item in alt_activities:
             f.write(f"{item}\n")
 
@@ -182,7 +182,7 @@ def main():
 
     if args.init:
         if not args.user or (not args.repo and not args.all):
-            print("❌ Error: --init requires at least --user and --repo or --all.")
+            print("Error: --init requires at least --user and --repo or --all.")
             return
         generate_config_file(args.user, args.repo, args.mode or "fun", args.all, args.include_forks)
         return
@@ -200,12 +200,12 @@ def main():
     include_forks = args.include_forks or config.get("include_forks", False)
 
     if not user or (not repo and not use_all):
-        print("❌ Error: Missing required user/repo. Use CLI args or generate with --init.")
+        print("Error: Missing required user/repo. Use CLI args or generate with --init.")
         return
 
     # Fix: Only show warning and override if both repo AND all are explicitly set via CLI
     if args.repo and args.all:
-        print("⚠️ Warning: Both --repo and --all specified via CLI — using --all.")
+        print("Warning: Both --repo and --all specified via CLI - using --all.")
         use_all = True
 
     # Determine which repos to analyze
@@ -227,14 +227,14 @@ def main():
         print(f"Fetched {len(commits)} commits from {repo_name}.")
 
     if not all_commits:
-        print("⚠️ No commits found. Skipping analysis.")
+        print("No commits found. Skipping analysis.")
         return
 
     sessions = group_commits_into_sessions(all_commits)
     hours_wasted = estimate_total_time(sessions)
 
     print(f"\nEstimated coding sessions: {sessions}")
-    print(f"Total time wasted: {hours_wasted} hours 😅\n")
+    print(f"Total time wasted: {hours_wasted} hours\n")
 
     activity_output = convert_time_to_activities(hours_wasted, mode=mode)
     print("Instead, you could have:")

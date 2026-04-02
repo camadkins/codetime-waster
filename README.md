@@ -1,6 +1,6 @@
-# ⏳ CodeTime Waster
+# CodeTime Waster
 
-**Estimate how much time you've "wasted" writing code on GitHub — and what else you could have done with that time.** Automatically generates a fun (or guilty!) `STATS.md` report based on your commit activity.
+**Estimate how much time you've "wasted" writing code on GitHub - and what else you could have done with that time.** Automatically generates a fun (or guilty!) `STATS.md` report based on your commit activity.
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/camadkins/codetime-waster/generate-stats.yml?label=GitHub%20Actions&style=flat-square)
 
@@ -12,7 +12,7 @@
 -  Weekly GitHub Action that updates `STATS.md`
 -  Modes: `fun`, `guilty`, `inspirational`, and `corporate`
 -  CLI version available for local use
--  GitHub template — easily clone and personalize
+-  GitHub template - easily clone and personalize
 
 ---
 
@@ -55,7 +55,7 @@ python cli/codetime_waster.py --user yourgithub --repo yourrepo --mode fun
    git push
    ```
 
-3. Go to GitHub → Actions → Manually run the job
+3. Go to GitHub -> Actions -> Manually run the job
 
 ---
 
@@ -73,8 +73,8 @@ python cli/codetime_waster.py --user yourgithub --repo yourrepo --mode fun
      ```
 
 3. Commit the change to `main`
-4. Go to **Actions** → Run the job
-5. `STATS.md` will be generated and pushed automatically every Sunday 🎉
+4. Go to **Actions** -> Run the job
+5. `STATS.md` will be generated and pushed automatically every Sunday
 
 ---
 
@@ -93,18 +93,18 @@ No maintenance needed.
 
 ##  Sample Output
 
-Here’s what your `STATS.md` might look like:
+Here's what your `STATS.md` might look like:
 
 ```markdown
-# 📊 CodeTime Waster Report
+# CodeTime Waster Report
 
 **User**: `camadkins`  
 **Repos analyzed**: `codetime-waster`
 
 **Estimated coding sessions**: `42`  
-**Total time wasted**: `21.0 hours` 😅
+**Total time wasted**: `21.0 hours`
 
-## 🌀 Instead, you could have:
+## Instead, you could have:
 
 - Cooked 42 healthy meals
 - Hit the gym 21 times
@@ -165,7 +165,7 @@ python cli/codetime_waster.py --user yourgithub --repo yourrepo --mode guilty
 - Fetches your commit timestamps via GitHub's API
 - Groups them into "sessions" based on gaps
 - Multiplies session count by average time (30 minutes)
-- Shows you what else you could’ve done in that time 😅
+- Shows you what else you could've done in that time
 
 ---
 

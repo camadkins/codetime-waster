@@ -24,7 +24,7 @@ def convert_time_to_activities(total_hours, activity_count=10, mode="fun"):
 
         units = int(total_hours // item["hours"])
         if units > 0:
-            results.append(f"- {item['activity'].capitalize()} {units} times")
+            results.append(f"- {item['activity'][0].upper()}{item['activity'][1:]} {units} times")
             used_activities.add(item["activity"])
 
         if len(results) >= activity_count:

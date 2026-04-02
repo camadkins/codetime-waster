@@ -12,10 +12,6 @@
     "hours": 3.88
   },
   {
-    "activity": "played a video game session",
-    "hours": 1.42
-  },
-  {
     "activity": "played 3 ARAMs in League",
     "hours": 1.08
   },
@@ -25,7 +21,7 @@
   },
   {
     "activity": "doomscrolled Twitter/X",
-    "hours": 1.1400000000000001
+    "hours": 1.14
   },
   {
     "activity": "wrote a useless bash script",
@@ -36,371 +32,15 @@
     "hours": 2.37
   },
   {
-    "activity": "watched a Marvel movie",
-    "hours": 2.57
-  },
-  {
-    "activity": "re-watched The Office",
-    "hours": 4.39
-  },
-  {
-    "activity": "played a video game session",
-    "hours": 1.91
-  },
-  {
-    "activity": "watched a Marvel movie",
-    "hours": 2.95
-  },
-  {
-    "activity": "re-watched The Office",
-    "hours": 3.9
-  },
-  {
-    "activity": "wrote a useless bash script",
-    "hours": 0.38
-  },
-  {
-    "activity": "played 3 ARAMs in League",
-    "hours": 0.9
-  },
-  {
-    "activity": "wrote a useless bash script",
-    "hours": 0.42
-  },
-  {
-    "activity": "re-watched The Office",
-    "hours": 4.04
-  },
-  {
-    "activity": "re-watched The Office",
-    "hours": 4.26
-  },
-  {
-    "activity": "doomscrolled Twitter/X",
-    "hours": 0.6
-  },
-  {
-    "activity": "watched a Marvel movie",
-    "hours": 2.81
-  },
-  {
     "activity": "built a Minecraft base",
     "hours": 3.42
-  },
-  {
-    "activity": "built a Minecraft base",
-    "hours": 2.78
-  },
-  {
-    "activity": "re-watched The Office",
-    "hours": 4.12
-  },
-  {
-    "activity": "watched a Marvel movie",
-    "hours": 2.74
-  },
-  {
-    "activity": "watched cat videos on YouTube",
-    "hours": 0.010000000000000009
-  },
-  {
-    "activity": "scrolled Reddit endlessly",
-    "hours": 1.28
-  },
-  {
-    "activity": "played a video game session",
-    "hours": 1.93
-  },
-  {
-    "activity": "built a Minecraft base",
-    "hours": 2.8
-  },
-  {
-    "activity": "scrolled Reddit endlessly",
-    "hours": 0.76
-  },
-  {
-    "activity": "built a Minecraft base",
-    "hours": 3.44
-  },
-  {
-    "activity": "re-watched The Office",
-    "hours": 4.26
-  },
-  {
-    "activity": "played a video game session",
-    "hours": 1.85
-  },
-  {
-    "activity": "built a Minecraft base",
-    "hours": 3.31
-  },
-  {
-    "activity": "built a Minecraft base",
-    "hours": 2.8
-  },
-  {
-    "activity": "played a video game session",
-    "hours": 1.94
-  },
-  {
-    "activity": "re-watched The Office",
-    "hours": 4.33
-  },
-  {
-    "activity": "doomscrolled Twitter/X",
-    "hours": 0.53
-  },
-  {
-    "activity": "doomscrolled Twitter/X",
-    "hours": 1.16
-  },
-  {
-    "activity": "watched a Marvel movie",
-    "hours": 2.5
-  },
-  {
-    "activity": "scrolled Reddit endlessly",
-    "hours": 0.91
-  },
-  {
-    "activity": "built a Minecraft base",
-    "hours": 3.07
   },
   {
     "activity": "reorganized your Notion workspace",
     "hours": 1.96
   },
   {
-    "activity": "played 3 ARAMs in League",
-    "hours": 1.19
-  },
-  {
-    "activity": "played a video game session",
-    "hours": 1.84
-  },
-  {
-    "activity": "played a video game session",
-    "hours": 1.53
-  },
-  {
-    "activity": "watched a Marvel movie",
-    "hours": 2.45
-  },
-  {
-    "activity": "doomscrolled Twitter/X",
-    "hours": 1.16
-  },
-  {
-    "activity": "watched cat videos on YouTube",
-    "hours": 0.45
-  },
-  {
-    "activity": "built a Minecraft base",
-    "hours": 2.87
-  },
-  {
-    "activity": "played 3 ARAMs in League",
-    "hours": 1.12
-  },
-  {
-    "activity": "built a Minecraft base",
-    "hours": 3.48
-  },
-  {
-    "activity": "played a video game session",
-    "hours": 1.76
-  },
-  {
-    "activity": "doomscrolled Twitter/X",
-    "hours": 0.59
-  },
-  {
-    "activity": "played 3 ARAMs in League",
-    "hours": 1.17
-  },
-  {
-    "activity": "doomscrolled Twitter/X",
-    "hours": 0.91
-  },
-  {
-    "activity": "scrolled Reddit endlessly",
-    "hours": 1.24
-  },
-  {
-    "activity": "watched cat videos on YouTube",
-    "hours": 0.28
-  },
-  {
-    "activity": "re-watched The Office",
-    "hours": 4.45
-  },
-  {
-    "activity": "re-watched The Office",
-    "hours": 4.39
-  },
-  {
-    "activity": "wrote a useless bash script",
-    "hours": 0.77
-  },
-  {
-    "activity": "doomscrolled Twitter/X",
-    "hours": 0.62
-  },
-  {
-    "activity": "watched cat videos on YouTube",
-    "hours": 0.26
-  },
-  {
-    "activity": "re-watched The Office",
-    "hours": 4.14
-  },
-  {
-    "activity": "watched a Marvel movie",
-    "hours": 2.74
-  },
-  {
-    "activity": "watched a Marvel movie",
-    "hours": 2.35
-  },
-  {
-    "activity": "watched cat videos on YouTube",
-    "hours": 0.63
-  },
-  {
-    "activity": "reorganized your Notion workspace",
-    "hours": 2.38
-  },
-  {
-    "activity": "re-watched The Office",
-    "hours": 4.04
-  },
-  {
-    "activity": "doomscrolled Twitter/X",
-    "hours": 1.19
-  },
-  {
-    "activity": "scrolled Reddit endlessly",
-    "hours": 0.88
-  },
-  {
-    "activity": "built a Minecraft base",
-    "hours": 3.15
-  },
-  {
-    "activity": "reorganized your Notion workspace",
-    "hours": 2.1
-  },
-  {
-    "activity": "played 3 ARAMs in League",
-    "hours": 1.42
-  },
-  {
-    "activity": "reorganized your Notion workspace",
-    "hours": 2.13
-  },
-  {
-    "activity": "re-watched The Office",
-    "hours": 3.93
-  },
-  {
-    "activity": "wrote a useless bash script",
-    "hours": 0.77
-  },
-  {
-    "activity": "doomscrolled Twitter/X",
-    "hours": 0.99
-  },
-  {
-    "activity": "played 3 ARAMs in League",
-    "hours": 1.47
-  },
-  {
-    "activity": "played a video game session",
-    "hours": 1.31
-  },
-  {
-    "activity": "played a video game session",
-    "hours": 1.59
-  },
-  {
-    "activity": "wrote a useless bash script",
-    "hours": 0.39
-  },
-  {
-    "activity": "doomscrolled Twitter/X",
-    "hours": 0.67
-  },
-  {
-    "activity": "watched a Marvel movie",
-    "hours": 2.83
-  },
-  {
-    "activity": "scrolled Reddit endlessly",
-    "hours": 1.07
-  },
-  {
-    "activity": "scrolled Reddit endlessly",
-    "hours": 1.31
-  },
-  {
-    "activity": "watched cat videos on YouTube",
-    "hours": 0.16
-  },
-  {
-    "activity": "built a Minecraft base",
-    "hours": 3.3
-  },
-  {
-    "activity": "watched cat videos on YouTube",
-    "hours": 0.72
-  },
-  {
-    "activity": "watched a Marvel movie",
-    "hours": 3.0
-  },
-  {
-    "activity": "wrote a useless bash script",
-    "hours": 0.87
-  },
-  {
-    "activity": "watched a Marvel movie",
-    "hours": 2.5
-  },
-  {
-    "activity": "doomscrolled Twitter/X",
-    "hours": 1.13
-  },
-  {
-    "activity": "wrote a useless bash script",
-    "hours": 0.46
-  },
-  {
-    "activity": "built a Minecraft base",
-    "hours": 2.94
-  },
-  {
-    "activity": "wrote a useless bash script",
-    "hours": 0.25
-  },
-  {
-    "activity": "played a video game session",
-    "hours": 1.99
-  },
-  {
-    "activity": "watched a Marvel movie",
-    "hours": 2.86
-  },
-  {
-    "activity": "scrolled Reddit endlessly",
-    "hours": 1.38
-  },
-  {
-    "activity": "watched a Marvel movie",
-    "hours": 2.37
-  },
-  {
-    "activity": "customized your terminal prompt for the 12th time",
+    "activity": "customized your terminal prompt again",
     "hours": 0.78
   },
   {
@@ -424,7 +64,7 @@
     "hours": 1.73
   },
   {
-    "activity": "watched speedruns of games you’ve never played",
+    "activity": "watched speedruns of games you've never played",
     "hours": 1.58
   },
   {
@@ -436,7 +76,207 @@
     "hours": 0.34
   },
   {
-    "activity": "compared GPU prices for a card you’re not buying",
+    "activity": "compared GPU prices for a card you're not buying",
     "hours": 1.1
+  },
+  {
+    "activity": "tried to explain crypto to your cat",
+    "hours": 0.45
+  },
+  {
+    "activity": "ranked fast food chicken nuggets in a spreadsheet",
+    "hours": 0.88
+  },
+  {
+    "activity": "watched a 3-hour video essay about a cartoon you never watched",
+    "hours": 3.1
+  },
+  {
+    "activity": "refreshed your email knowing nothing new came in",
+    "hours": 0.15
+  },
+  {
+    "activity": "designed a logo for a project you'll never start",
+    "hours": 1.65
+  },
+  {
+    "activity": "looked up flights to places you can't afford",
+    "hours": 0.92
+  },
+  {
+    "activity": "made a tier list of cereal brands",
+    "hours": 0.55
+  },
+  {
+    "activity": "read the comments section on a news article",
+    "hours": 0.73
+  },
+  {
+    "activity": "went down a TikTok rabbit hole at 2am",
+    "hours": 1.85
+  },
+  {
+    "activity": "searched for the perfect wallpaper for your desktop",
+    "hours": 0.68
+  },
+  {
+    "activity": "organized your Spotify playlists by mood",
+    "hours": 1.12
+  },
+  {
+    "activity": "watched someone build a tiny house on YouTube",
+    "hours": 1.45
+  },
+  {
+    "activity": "looked up your name on Urban Dictionary",
+    "hours": 0.22
+  },
+  {
+    "activity": "created a new email account you'll forget about",
+    "hours": 0.31
+  },
+  {
+    "activity": "debated tabs vs spaces with nobody in particular",
+    "hours": 0.58
+  },
+  {
+    "activity": "tried a new Linux distro and went back to your old one",
+    "hours": 2.75
+  },
+  {
+    "activity": "googled 'how to be productive' instead of being productive",
+    "hours": 0.42
+  },
+  {
+    "activity": "set up a home server and never used it",
+    "hours": 3.5
+  },
+  {
+    "activity": "watched a mukbang while eating instant noodles",
+    "hours": 0.95
+  },
+  {
+    "activity": "rage-quit a mobile game and immediately redownloaded it",
+    "hours": 0.38
+  },
+  {
+    "activity": "spent an hour picking a font for a personal project",
+    "hours": 1.0
+  },
+  {
+    "activity": "read about productivity systems instead of using one",
+    "hours": 1.35
+  },
+  {
+    "activity": "watched a documentary about something you'll forget tomorrow",
+    "hours": 1.75
+  },
+  {
+    "activity": "window-shopped on Amazon with no intention to buy",
+    "hours": 0.82
+  },
+  {
+    "activity": "checked how many unread emails you have without reading any",
+    "hours": 0.18
+  },
+  {
+    "activity": "tried to learn Vim keybindings and gave up",
+    "hours": 1.5
+  },
+  {
+    "activity": "watched a compilation of perfectly cut screams",
+    "hours": 0.65
+  },
+  {
+    "activity": "looked up your old MySpace page on the Wayback Machine",
+    "hours": 0.72
+  },
+  {
+    "activity": "rewatched the same YouTube video you saw last week",
+    "hours": 0.48
+  },
+  {
+    "activity": "calculated how much sleep you'd get if you went to bed right now",
+    "hours": 0.2
+  },
+  {
+    "activity": "binged an entire true crime podcast",
+    "hours": 4.2
+  },
+  {
+    "activity": "scrolled through memes on your phone while at your computer",
+    "hours": 0.55
+  },
+  {
+    "activity": "watched a how-it's-made video about something mundane",
+    "hours": 0.85
+  },
+  {
+    "activity": "argued with a stranger on the internet about pineapple on pizza",
+    "hours": 0.62
+  },
+  {
+    "activity": "created a to-do list app instead of using one that already exists",
+    "hours": 3.8
+  },
+  {
+    "activity": "researched the best pen for note-taking and bought nothing",
+    "hours": 0.78
+  },
+  {
+    "activity": "watched a timelapse of someone cleaning their room",
+    "hours": 0.35
+  },
+  {
+    "activity": "stalked your own social media profile",
+    "hours": 0.42
+  },
+  {
+    "activity": "made a playlist you'll listen to once",
+    "hours": 0.9
+  },
+  {
+    "activity": "tried to beat your typing speed record",
+    "hours": 0.55
+  },
+  {
+    "activity": "read patch notes for a game you don't play anymore",
+    "hours": 0.65
+  },
+  {
+    "activity": "watched a video about why you're always tired",
+    "hours": 0.72
+  },
+  {
+    "activity": "configured dark mode on every app again",
+    "hours": 0.48
+  },
+  {
+    "activity": "looked up what your dreams mean",
+    "hours": 0.33
+  },
+  {
+    "activity": "browsed job listings with no intention of applying",
+    "hours": 1.15
+  },
+  {
+    "activity": "watched someone else play a horror game because you're too scared",
+    "hours": 2.1
+  },
+  {
+    "activity": "spent forever choosing what to watch and then watched nothing",
+    "hours": 0.5
+  },
+  {
+    "activity": "updated your phone's home screen layout",
+    "hours": 0.62
+  },
+  {
+    "activity": "researched mechanical keyboard switches in extreme detail",
+    "hours": 1.4
+  },
+  {
+    "activity": "watched a supercut of movie villains being right",
+    "hours": 1.25
   }
 ]

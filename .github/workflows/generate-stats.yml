@@ -10,33 +10,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: ⬇️ Checkout repo
+      - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: 🐍 Set up Python
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
-      - name: 📦 Install dependencies
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install pyyaml
 
-      - name: 🧠 Run CodeTime Waster
+      - name: Run CodeTime Waster
         run: python main.py
 
-      - name: ✅ Commit and push STATS.md
+      - name: Commit and push STATS.md
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add STATS.md
-          git commit -m "🔄 Weekly CodeTime Stats Update" || exit 0
+          git commit -m "Weekly CodeTime Stats Update" || exit 0
           git pull --rebase
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
-      - name: 📎 Touch to avoid STATS conflict
+      - name: Touch to avoid STATS conflict
         run: touch .timestamp

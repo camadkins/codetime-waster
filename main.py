@@ -28,7 +28,7 @@ def main():
     # Handle --init mode
     if args.init:
         if not args.user or (not args.repo and not args.all):
-            print("❌ Error: --init requires at least --user and --repo or --all.")
+            print("Error: --init requires at least --user and --repo or --all.")
             return
         generate_config_file(args.user, args.repo, args.mode or "fun", args.all, args.include_forks)
         return
@@ -47,12 +47,12 @@ def main():
     include_forks = args.include_forks or config.get("include_forks", False)
 
     if not user or (not repo and not use_all):
-        print("❌ Error: Missing required user/repo. Use CLI args or generate with --init.")
+        print("Error: Missing required user/repo. Use CLI args or generate with --init.")
         return
 
     # Fix: Only show warning and override if both repo AND all are explicitly set via CLI
     if args.repo and args.all:
-        print("⚠️ Warning: Both --repo and --all specified via CLI — using --all.")
+        print("Warning: Both --repo and --all specified via CLI - using --all.")
         use_all = True
 
     # Determine which repos to analyze
@@ -74,14 +74,14 @@ def main():
         print(f"Fetched {len(commits)} commits from {repo_name}.")
 
     if not all_commits:
-        print("⚠️ No commits found. Skipping analysis.")
+        print("No commits found. Skipping analysis.")
         return
 
     sessions = group_commits_into_sessions(all_commits)
     hours_wasted = estimate_total_time(sessions)
 
     print(f"\nEstimated coding sessions: {sessions}")
-    print(f"Total time wasted: {hours_wasted} hours 😅")
+    print(f"Total time wasted: {hours_wasted} hours")
 
     activity_output = convert_time_to_activities(hours_wasted, mode=mode)
 
