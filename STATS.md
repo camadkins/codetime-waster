@@ -8,13 +8,13 @@
 
 ## Instead, you could have:
 
-- Spent an hour picking a font for a personal project 473 times
-- Argued about keyboard layouts on Discord 455 times
+- Played 3 ARAMs in League 438 times
+- Ranked fast food chicken nuggets in a spreadsheet 538 times
 - Read about productivity systems instead of using one 350 times
-- Read patch notes for a game you don't play anymore 728 times
-- Calculated how much sleep you'd get if you went to bed right now 2367 times
-- Browsed job listings with no intention of applying 411 times
-- Looked up what your dreams mean 1434 times
-- Watched a timelapse of someone cleaning their room 1352 times
-- Configured dark mode on every app again 986 times
-- Built a Minecraft base 138 times
+- Refreshed your email knowing nothing new came in 3156 times
+- Customized your terminal prompt again 607 times
+- Played a video game session 290 times
+- Went down a TikTok rabbit hole at 2am 255 times
+- Updated your phone's home screen layout 763 times
+- Watched an entire Blender tutorial with no intention to 3D model anything 209 times
+- Organized your Spotify playlists by mood 422 times
