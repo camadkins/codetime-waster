@@ -3,18 +3,18 @@
 **User**: `camadkins`
 **Repos analyzed**: .dev, .dev-blog, .dev-notes, .dev-theme, codetime-waster, obsidian-canvas-connect, policy-core`
 
-**Estimated coding sessions**: `948`
-**Total time wasted**: `474.0 hours`
+**Estimated coding sessions**: `949`
+**Total time wasted**: `474.5 hours`
 
 ## Instead, you could have:
 
-- Watched a compilation of perfectly cut screams 729 times
-- Watched speedruns of games you've never played 299 times
-- Looked up flights to places you can't afford 515 times
-- Ranked fast food chicken nuggets in a spreadsheet 538 times
-- Tried a new Linux distro and went back to your old one 172 times
-- Went down a TikTok rabbit hole at 2am 256 times
-- Compared GPU prices for a card you're not buying 430 times
-- Argued about keyboard layouts on Discord 455 times
-- Re-watched The Office 122 times
-- Configured dark mode on every app again 987 times
+- Searched for the perfect wallpaper for your desktop 697 times
+- Tried to learn Vim keybindings and gave up 316 times
+- Watched a supercut of movie villains being right 379 times
+- Calculated how much sleep you'd get if you went to bed right now 2372 times
+- Updated your phone's home screen layout 765 times
+- Created a to-do list app instead of using one that already exists 124 times
+- Doomscrolled Twitter/X 416 times
+- Played a video game session 291 times
+- Watched a Marvel movie 200 times
+- Wrote a useless bash script 1355 times
