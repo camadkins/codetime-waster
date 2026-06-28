@@ -3,18 +3,18 @@
 **User**: `camadkins`
 **Repos analyzed**: .dev, .dev-notes, .dev-theme, codetime-waster, obsidian-canvas-connect, policy-core, promptcite`
 
-**Estimated coding sessions**: `1000`
-**Total time wasted**: `500.0 hours`
+**Estimated coding sessions**: `1001`
+**Total time wasted**: `500.5 hours`
 
 ## Instead, you could have:
 
-- Doomscrolled Twitter/X 438 times
-- Calculated how much sleep you'd get if you went to bed right now 2499 times
-- Played a video game session 306 times
-- Watched a supercut of movie villains being right 400 times
-- Tried to beat your typing speed record 909 times
-- Checked how many unread emails you have without reading any 2777 times
-- Researched mechanical keyboard switches in extreme detail 357 times
-- Looked up your name on Urban Dictionary 2272 times
-- Watched cat videos on YouTube 1666 times
-- Tried to learn Vim keybindings and gave up 333 times
+- Watched speedruns of games you've never played 316 times
+- Configured dark mode on every app again 1042 times
+- Argued about keyboard layouts on Discord 481 times
+- Organized your Spotify playlists by mood 446 times
+- Set up a home server and never used it 143 times
+- Argued with a stranger on the internet about pineapple on pizza 807 times
+- Watched someone build a tiny house on YouTube 345 times
+- Refreshed your email knowing nothing new came in 3336 times
+- Watched a compilation of perfectly cut screams 769 times
+- Doomscrolled Twitter/X 439 times
